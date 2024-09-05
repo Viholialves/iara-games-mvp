@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Iara Games</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="icon" type="image/png" href="../img/icone.webp">
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">Voltar</button>
+        <h1>Contato</h1>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Email:</strong> <a href="mailto:iara.games@gmail.com">iara.games@gmail.com</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Envie-nos uma Mensagem</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="confirmationMessage" style="display:none;">Mensagem enviada com sucesso!</p>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            // Exibe a mensagem de confirmação
+            document.getElementById('confirmationMessage').style.display = 'block';
+            
+            // Limpa os campos do formulário
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/BACKGROUND.jpeg');
+    color: #ffffff; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8); /* Fundo semitransparente preto */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.content-box {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #4b0082; /* Fundo roxo */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content-box h1 {
+    margin-bottom: 20px;
+    color: #ffffff; /* Título em branco */
+}
+
+.content-box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #dcdcdc; /* Texto em cinza claro */
+}
+
+/* Estilização do botão "Voltar" */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #8a2be2; /* Roxo */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5d1688; /* Tom mais escuro de roxo ao passar o mouse */
+}

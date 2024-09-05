@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iara Games - Recuperar Senha</title>
+    <link rel="stylesheet" href="../css/esquesenha.css">
+    <link rel="icon" type="image/png" href="../img/icone.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <h2 class="logo col-2 text-center text-white">Iara Games</h2>
+                <nav class="col-10 navigation d-flex align-items-center">
+                    <a href="./sobrenos.html" class="flex-fill text-center text-white">Sobre</a>
+                    <a href="./servicos.html" class="flex-fill text-center text-white">Serviços</a>
+                    <a href="./contato.html" class="flex-fill text-center text-white">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-box esqueceu-senha">
+            <h2 class="text-center">Recuperar Senha</h2>
+            <form>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="password-addon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" class="form-control" placeholder="Nova Senha" aria-label="Nova Senha" aria-describedby="password-addon" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="repeat-addon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" class="form-control" placeholder="Repetir Nova Senha" aria-label="Repetir" aria-describedby="repeat-addon" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="phone-addon"><ion-icon name="call-outline"></ion-icon></span>
+                    <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="phone-addon" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="code-addon"><ion-icon name="key-outline"></ion-icon></span>
+                    <input type="text" class="form-control" placeholder="Código de Recuperação" aria-label="Código" aria-describedby="code-addon" required>
+                </div>
+
+                <!-- Alerta de página em desenvolvimento -->
+                <div class="alert alert-warning text-center" role="alert">
+                    Esta página ainda está em desenvolvimento e pode não funcionar conforme o esperado.
+                </div>
+
+                <div class="text-center">
+                    <a href="../index.html"><button type="button" class="btn btn-primary">Salvar</button></a>
+                </div>
+            </form>
+
+            <!-- Botão de Voltar -->
+            <div class="text-center mt-3">
+                <button type="button" id="backButton" class="btn btn-secondary">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Adicionando funcionalidade ao botão de voltar
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

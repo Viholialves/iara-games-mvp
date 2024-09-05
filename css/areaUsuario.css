@@ -1,0 +1,44 @@
+body {
+    background-image: url('../img/BACKGROUND.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF; /* Texto padrão em branco para melhor contraste */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente translúcido */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 15px; /* Arredondamento maior para suavizar a aparência */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    border: 2px solid #7D3C98; /* Borda roxa */
+}
+
+h1.text-center {
+    color: #6A0DAD; /* Cor roxa para o título */
+    font-size: 2.5em; /* Fonte maior para destaque */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para profundidade */
+}
+
+#userInfo {
+    margin-top: 20px;
+}
+
+.info-block {
+    padding: 15px;
+    border-bottom: 1px solid #A569BD; /* Linha divisória em roxo suave */
+    font-size: 1.2em;
+    background-color: rgba(122, 68, 159, 0.1); /* Fundo leve roxo */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.info-block:last-child {
+    border-bottom: none;
+}
+
+.info-block:hover {
+    background-color: rgba(122, 68, 159, 0.2); /* Efeito de destaque ao passar o mouse */
+}

@@ -1,0 +1,93 @@
+/* Estilo geral da página */
+body {
+  background-image: url('../img/BACKGROUND.jpeg');
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #6A0DAD; /* Tom de roxo escuro */
+  padding: 20px 0;
+}
+
+header .logo {
+  font-size: 2em;
+  color: #fff;
+}
+
+header nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper para o formulário */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  color: #6A0DAD;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Estilo dos campos de entrada */
+.input-group-text {
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.input-group .form-control {
+  border: 1px solid #6A0DAD;
+  border-left: none;
+  box-shadow: none;
+  background-color: #f9f6ff;
+}
+
+.input-group .form-control:focus {
+  border-color: #8A2BE2;
+  box-shadow: 0 0 5px #8A2BE2;
+  outline: none;
+}
+
+/* Estilo do botão */
+.btn-primary {
+  background-color: #6A0DAD;
+  border-color: #6A0DAD;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #8A2BE2;
+}
+
+/* Centralizar o botão */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
